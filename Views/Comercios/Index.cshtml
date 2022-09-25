@@ -1,0 +1,21 @@
+@model List<Avaliacao3Lp3.ViewModels.ComercioViewModel>
+
+@{
+    ViewData["Title"] = "Lojas e Quiosques";
+}
+
+<h1>Lojas e quiosques</h1>
+
+@if(Model.Count == 0)
+{
+    <p>Não há nenhuma loja ou quiosque</p>
+}
+else
+{
+    <ul>
+        @foreach(var comercio in Model)
+        {
+            <li><h3>@comercio.Nome</h3></li>
+        }
+    </ul>
+}
