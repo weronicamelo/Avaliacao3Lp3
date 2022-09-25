@@ -1,4 +1,4 @@
-namespace AvaliacaoLp3.Models;
+namespace Avaliacao3Lp3.Models;
 
 public class ErrorViewModel
 {
